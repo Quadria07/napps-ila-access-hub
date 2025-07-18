@@ -14,13 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      registrations: {
+        Row: {
+          access_code: string
+          created_at: string
+          email: string
+          full_name: string
+          how_heard: string
+          id: string
+          lga_town: string
+          phone_number: string
+          position: string
+          school_name: string
+          updated_at: string
+        }
+        Insert: {
+          access_code: string
+          created_at?: string
+          email: string
+          full_name: string
+          how_heard: string
+          id?: string
+          lga_town: string
+          phone_number: string
+          position: string
+          school_name: string
+          updated_at?: string
+        }
+        Update: {
+          access_code?: string
+          created_at?: string
+          email?: string
+          full_name?: string
+          how_heard?: string
+          id?: string
+          lga_town?: string
+          phone_number?: string
+          position?: string
+          school_name?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      generate_access_code: {
+        Args: Record<PropertyKey, never>
+        Returns: string
+      }
     }
     Enums: {
       [_ in never]: never
