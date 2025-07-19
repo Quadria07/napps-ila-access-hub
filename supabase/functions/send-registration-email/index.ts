@@ -53,7 +53,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send copy to admin (btexloopacademy@gmail.com)
     const adminEmailResponse = await resend.emails.send({
-      from: "NAPPS ILA Workshop <noreply@btexloopacademy.com.ng>",
+      from: "NAPPS ILA Workshop <onboarding@resend.dev>",
       to: ["btexloopacademy@gmail.com"],
       subject: "New Workshop Registration - NAPPS ILA Tech Workshop",
       html: `

@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Loader2, CheckCircle2, Calendar, Clock, MapPin, Users, Award, Search, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Countdown } from "@/components/Countdown";
 
 interface RegistrationData {
   fullName: string;
@@ -217,42 +218,46 @@ const Index = () => {
                 Workshop Details
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Calendar className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="font-medium">Date</p>
-                  <p className="text-sm text-muted-foreground">To Be Announced</p>
+            <CardContent className="space-y-6">
+              <Countdown />
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <Calendar className="h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-medium">Date</p>
+                    <p className="text-sm text-muted-foreground">To Be Announced</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Clock className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="font-medium">Time</p>
-                  <p className="text-sm text-muted-foreground">To Be Announced</p>
+                <div className="flex items-center gap-3">
+                  <Clock className="h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-medium">Time</p>
+                    <p className="text-sm text-muted-foreground">To Be Announced</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="font-medium">Venue</p>
-                  <p className="text-sm text-muted-foreground">To Be Announced</p>
+                <div className="flex items-center gap-3">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-medium">Venue</p>
+                    <p className="text-sm text-muted-foreground">To Be Announced</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Users className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="font-medium">Audience</p>
-                  <p className="text-sm text-muted-foreground">School Proprietors, Heads & Education Leaders</p>
+                <div className="flex items-center gap-3">
+                  <Users className="h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-medium">Audience</p>
+                    <p className="text-sm text-muted-foreground">School Proprietors, Heads & Education Leaders</p>
+                  </div>
                 </div>
-              </div>
-              <div className="bg-brand-orange/10 border border-brand-orange/20 rounded-lg p-4">
-                <p className="text-sm font-medium text-brand-orange-dark">
-                  📌 Entry: Strictly by access code (sent before event date)
-                </p>
-                <p className="text-xs text-brand-orange-dark mt-1">
-                  First Come, First Served • FREE Registration Required
-                </p>
+                <div className="bg-brand-orange/10 border border-brand-orange/20 rounded-lg p-4">
+                  <p className="text-sm font-medium text-brand-orange-dark">
+                    📌 Entry: Strictly by access code (sent before event date)
+                  </p>
+                  <p className="text-xs text-brand-orange-dark mt-1">
+                    First Come, First Served • FREE Registration Required
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
