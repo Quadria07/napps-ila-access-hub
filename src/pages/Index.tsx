@@ -218,49 +218,50 @@ const Index = () => {
                 Workshop Details
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <Countdown />
-              
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Calendar className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Date</p>
-                    <p className="text-sm text-muted-foreground">To Be Announced</p>
-                  </div>
+            <CardContent className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Calendar className="h-5 w-5 text-primary" />
+                <div>
+                  <p className="font-medium">Date</p>
+                  <p className="text-sm text-muted-foreground">To Be Announced</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Clock className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Time</p>
-                    <p className="text-sm text-muted-foreground">To Be Announced</p>
-                  </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <Clock className="h-5 w-5 text-primary" />
+                <div>
+                  <p className="font-medium">Time</p>
+                  <p className="text-sm text-muted-foreground">To Be Announced</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Venue</p>
-                    <p className="text-sm text-muted-foreground">To Be Announced</p>
-                  </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin className="h-5 w-5 text-primary" />
+                <div>
+                  <p className="font-medium">Venue</p>
+                  <p className="text-sm text-muted-foreground">To Be Announced</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Users className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Audience</p>
-                    <p className="text-sm text-muted-foreground">School Proprietors, Heads & Education Leaders</p>
-                  </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <Users className="h-5 w-5 text-primary" />
+                <div>
+                  <p className="font-medium">Audience</p>
+                  <p className="text-sm text-muted-foreground">School Proprietors, Heads & Education Leaders</p>
                 </div>
-                <div className="bg-brand-orange/10 border border-brand-orange/20 rounded-lg p-4">
-                  <p className="text-sm font-medium text-brand-orange-dark">
-                    📌 Entry: Strictly by access code (sent before event date)
-                  </p>
-                  <p className="text-xs text-brand-orange-dark mt-1">
-                    First Come, First Served • FREE Registration Required
-                  </p>
-                </div>
+              </div>
+              <div className="bg-brand-orange/10 border border-brand-orange/20 rounded-lg p-4">
+                <p className="text-sm font-medium text-brand-orange-dark">
+                  📌 Entry: Strictly by access code (sent before event date)
+                </p>
+                <p className="text-xs text-brand-orange-dark mt-1">
+                  First Come, First Served • FREE Registration Required
+                </p>
               </div>
             </CardContent>
           </Card>
+        </div>
+        
+        {/* Countdown Section */}
+        <div className="mb-8">
+          <Countdown />
         </div>
 
         {/* Registration Form */}
